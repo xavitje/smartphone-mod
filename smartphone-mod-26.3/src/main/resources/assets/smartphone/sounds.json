@@ -1,0 +1,84 @@
+{
+  "phone.notify": {
+    "sounds": [
+      "smartphone:notify"
+    ],
+    "subtitle": "subtitles.smartphone.notify"
+  },
+  "phone.message": {
+    "sounds": [
+      "smartphone:message"
+    ],
+    "subtitle": "subtitles.smartphone.message"
+  },
+  "phone.vibrate": {
+    "sounds": [
+      "smartphone:vibrate"
+    ],
+    "subtitle": "subtitles.smartphone.vibrate"
+  },
+  "phone.shutter": {
+    "sounds": [
+      "smartphone:shutter"
+    ],
+    "subtitle": "subtitles.smartphone.shutter"
+  },
+  "phone.alarm": {
+    "sounds": [
+      "smartphone:alarm"
+    ],
+    "subtitle": "subtitles.smartphone.alarm"
+  },
+  "phone.tap": {
+    "sounds": [
+      "smartphone:tap"
+    ]
+  },
+  "phone.ring.marimba": {
+    "sounds": [
+      "smartphone:ring_marimba"
+    ],
+    "subtitle": "subtitles.smartphone.message"
+  },
+  "phone.ring.bells": {
+    "sounds": [
+      "smartphone:ring_bells"
+    ],
+    "subtitle": "subtitles.smartphone.message"
+  },
+  "phone.ring.digital": {
+    "sounds": [
+      "smartphone:ring_digital"
+    ],
+    "subtitle": "subtitles.smartphone.message"
+  },
+  "phone.ring.harp": {
+    "sounds": [
+      "smartphone:ring_harp"
+    ],
+    "subtitle": "subtitles.smartphone.message"
+  },
+  "phone.ring.pop": {
+    "sounds": [
+      "smartphone:ring_pop"
+    ],
+    "subtitle": "subtitles.smartphone.message"
+  },
+  "atm.beep": {
+    "sounds": [
+      "smartphone:atm_beep"
+    ]
+  },
+  "atm.cash": {
+    "sounds": [
+      "smartphone:atm_cash"
+    ],
+    "subtitle": "subtitles.smartphone.atm_cash"
+  },
+  "atm.coin": {
+    "sounds": [
+      "smartphone:atm_coin"
+    ],
+    "subtitle": "subtitles.smartphone.atm_coin"
+  }
+}

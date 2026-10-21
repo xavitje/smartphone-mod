@@ -1,0 +1,106 @@
+{
+ "parent": "minecraft:block/block",
+ "textures": {
+  "particle": "smartphone:block/cctv_mount",
+  "mount": "smartphone:block/cctv_mount",
+  "dark": "smartphone:block/cctv_dark"
+ },
+ "elements": [
+  {
+   "from": [
+    5,
+    0,
+    5
+   ],
+   "to": [
+    11,
+    1,
+    11
+   ],
+   "faces": {
+    "north": {
+     "texture": "#mount"
+    },
+    "south": {
+     "texture": "#mount"
+    },
+    "east": {
+     "texture": "#mount"
+    },
+    "west": {
+     "texture": "#mount"
+    },
+    "up": {
+     "texture": "#mount"
+    },
+    "down": {
+     "texture": "#mount"
+    }
+   }
+  },
+  {
+   "from": [
+    7.25,
+    1,
+    7.25
+   ],
+   "to": [
+    8.75,
+    5.5,
+    8.75
+   ],
+   "faces": {
+    "north": {
+     "texture": "#dark"
+    },
+    "south": {
+     "texture": "#dark"
+    },
+    "east": {
+     "texture": "#dark"
+    },
+    "west": {
+     "texture": "#dark"
+    },
+    "up": {
+     "texture": "#dark"
+    },
+    "down": {
+     "texture": "#dark"
+    }
+   }
+  },
+  {
+   "from": [
+    6.5,
+    5,
+    6.5
+   ],
+   "to": [
+    9.5,
+    6,
+    9.5
+   ],
+   "faces": {
+    "north": {
+     "texture": "#dark"
+    },
+    "south": {
+     "texture": "#dark"
+    },
+    "east": {
+     "texture": "#dark"
+    },
+    "west": {
+     "texture": "#dark"
+    },
+    "up": {
+     "texture": "#dark"
+    },
+    "down": {
+     "texture": "#dark"
+    }
+   }
+  }
+ ]
+}

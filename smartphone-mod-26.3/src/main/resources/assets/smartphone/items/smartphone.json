@@ -1,0 +1,7 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "smartphone:item/smartphone",
+    "tints": [ { "type": "minecraft:dye", "default": -13421769 } ]
+  }
+}

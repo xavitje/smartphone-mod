@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:crafting_dye",
+  "dye": "#minecraft:dyes",
+  "group": "smartphone_dyed",
+  "result": { "id": "smartphone:smartphone" },
+  "target": "smartphone:smartphone"
+}

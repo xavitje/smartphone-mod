@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "smartphone:block/atm" },
+    "facing=east":  { "model": "smartphone:block/atm", "y": 90 },
+    "facing=south": { "model": "smartphone:block/atm", "y": 180 },
+    "facing=west":  { "model": "smartphone:block/atm", "y": 270 }
+  }
+}

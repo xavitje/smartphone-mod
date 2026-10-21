@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "smartphone",
+  "version": "${version}",
+  "name": "Smartphone",
+  "description": "A modern in-game smartphone: Messages with group chats and photos, Bank with payment requests, standing orders and interest, Map with waypoints and friends, Marketplace with server escrow, Camera, 112, Settings, Calculator and Clock, plus an ATM block, a storage network, parkour and security cameras (CCTV). The server is always the authority.",
+  "authors": [
+    "Rafi"
+  ],
+  "license": "MIT",
+  "icon": "assets/smartphone/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "nl.smartphonemod.SmartphoneMod"
+    ],
+    "client": [
+      "nl.smartphonemod.client.SmartphoneClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "mixins": [
+    "smartphone.mixins.json",
+    {
+      "config": "smartphone.client.mixins.json",
+      "environment": "client"
+    }
+  ]
+}

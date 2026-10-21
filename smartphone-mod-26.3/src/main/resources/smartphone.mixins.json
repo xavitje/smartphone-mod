@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "nl.smartphonemod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ChunkMapInvoker",
+    "ChunkMapMixin",
+    "TrackedEntityMixin",
+    "LivingEntityAccessor",
+    "ServerLevelMixin",
+    "ServerGamePacketListenerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

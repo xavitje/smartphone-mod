@@ -1,0 +1,65 @@
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+    id 'maven-publish'
+}
+
+base {
+    archivesName = 'smartphone'
+}
+
+repositories {
+    mavenCentral()
+}
+
+loom {
+    // Client code (screens, rendering) lives in src/client and is never loaded on a dedicated server.
+    splitEnvironmentSourceSets()
+
+    mods {
+        "smartphone" {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.client
+        }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    // Server-side storage, bundled inside the mod jar (jar-in-jar).
+    implementation "org.xerial:sqlite-jdbc:${project.sqlite_version}"
+    include "org.xerial:sqlite-jdbc:${project.sqlite_version}"
+
+    // MP4 export of CCTV clips (pure Java H.264 encoder), client side.
+    implementation "org.jcodec:jcodec:0.2.5"
+    include "org.jcodec:jcodec:0.2.5"
+}
+
+processResources {
+    def version = project.version
+    inputs.property "version", version
+    filesMatching("fabric.mod.json") {
+        expand "version": version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 25
+    it.options.encoding = 'UTF-8'
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+}
+
+jar {
+    def projectName = project.name
+    inputs.property "projectName", projectName
+    from("LICENSE") {
+        rename { "${it}_$projectName" }
+    }
+}

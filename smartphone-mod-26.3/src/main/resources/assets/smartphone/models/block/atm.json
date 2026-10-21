@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/orientable", "textures": { "top": "smartphone:block/atm_top", "front": "smartphone:block/atm_front", "side": "smartphone:block/atm_side" } }
